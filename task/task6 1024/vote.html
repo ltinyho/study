@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>投票</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/common.css">
+	<link rel="stylesheet" type="text/css" href="style/vote.css">
+</head>
+<body>
+	<div class="wrap-container">
+		<header>
+			<ul class="menu">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			投票
+			<a href="#" class="close"></a>
+		</header>
+		<!-- main -->
+		<div class="main">
+			<div class="tips">
+				<p>发言讨论结束，请大家投票</p>
+				<div class="voice" id="play"><audio id="mp3" src="images/once-again.mp3"></audio><span class="triangle"></span></div>
+			</div>
+			<!-- vote -->
+			<div class="vote">
+				<h3>点击得票数最多人的头像</h3>
+				<ul class="list-items">
+					<li class="item ">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select show">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+					<li class="item">
+						<div class="occupation">
+							<p>水民</p>
+							<span class="num">1号</span>
+						</div>
+						<ul class="select">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- /vote -->
+			<div class="scroll-bar">
+				<div class="current-bar"></div>
+			</div>
+		</div>
+		<!-- /main -->
+	</div>
+
+	<script>
+		var mp3 = document.getElementById("mp3");
+		var play = document.getElementById("play");
+		play.onclick = function () {
+			if(mp3.paused){    
+	       		mp3.play();    
+		    }else{    
+		        mp3.pause();    
+		    }  
+		}
+		
+	</script>
+</body>
+</html>

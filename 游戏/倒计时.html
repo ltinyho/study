@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>番茄钟</title>
+	<style type="text/css">
+		body {
+			background-color: #333;
+			color: #fff;
+			font-weight: 500;
+		}
+		.fr{
+			float: right;
+		}
+		.fl	{
+			float: left;
+		}
+		.wrap {
+			margin: 200px auto;
+			width: 50%;
+			height: 300px;
+			overflow: hidden;
+			padding-left: 200px;
+		}
+
+		.setting{
+			margin-left: 40px;
+		}
+
+		.setting .current {
+			margin:  0 10px;
+			font-size: 30px;
+		}
+		button{
+			width: 100px;
+			font-size: 30px;
+			color: #fff;
+			outline: none;
+			border: #333;
+			background-color: #333
+		}
+		button:hover{
+			background-color: #365;
+		}
+
+		.current {
+			width: 30px;
+		}
+		.time{
+			margin: 100px 100px;
+			width: 100px;
+			height: 100px;
+			font-size: 50px;
+			color; #fff;
+		}	
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="setting">
+			<button class="sub fl" id="sub">-</button>
+			<div class="current fl" id="current">10</div>
+			<button class="add fl" id="add">+</button>
+		</div>
+		<div class="time" id="time">
+			10:00
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	var sub = document.getElementById("sub");
+	var timer = null;
+	var second = 0;
+	var current = document.getElementById("current");
+	var add = document.getElementById("add");
+	var time = document.getElementById("time");
+	var flag = true;
+	var cur = 10;
+	sub.addEventListener("click",function(){
+		clearInterval(timer);
+		flag = true;
+		add.disabled = false;
+		cur = current.innerText-1;
+		current.innerText= cur ;
+		time.innerText = cur < 10 ? ("0"+cur+":00"): cur+":00";
+		if(cur <=1){
+			this.disabled = true;
+		}
+	});
+	add.addEventListener("click",function(){
+		clearInterval(timer);
+		flag = true;
+		sub.disabled = false;
+		cur = parseInt(current.innerText);
+		current.innerText= cur+1 ;
+		time.innerText = cur+1 < 10 ? ("0"+(cur+1)+":00"): cur+1+":00";
+		if(cur >=25){
+			this.disabled = true;
+		}
+	});
+
+
+	time.addEventListener("click",function(){
+		if(flag == true){
+			changeTime(cur);
+			flag = false;
+		}
+		else{
+			clearInterval(timer);
+			flag = true;
+		}
+	});
+	function changeTime(minute){
+		clearInterval(timer);
+		timer = setInterval(function () {
+			if(second ==0){
+				second = 59;
+				minute--;
+				current.innerText = minute;
+			}
+			console.log(second);
+			second = (parseInt(second))-1;
+			second = second < 10 ? "0" + second : second;
+			time.innerText = minute +":" + second;
+			if(minute == 0 && second == 0){
+				clearInterval(timer);
+				time.innerText = "10:00";
+				current.innerText = 10;
+			}
+		},10);
+	}
+</script>

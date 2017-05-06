@@ -1,0 +1,165 @@
+﻿@charset: "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Microsoft YaHei";
+}
+ul{
+	list-style: none;
+}
+.wrap {
+	margin:0 auto;
+	width: 720px;
+
+}
+
+.header {
+	position: fixed;
+	z-index: 999;
+	width: 720px;
+	height: 88px;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #5FBFCD ;
+}
+
+/*@内容详情页*/
+
+.findWorker,
+.findBoss{
+	float: left;
+	width: 144px;
+	height: 70px;
+	margin-top: 10px;
+	font-size: 32px;
+	line-height: 70px;
+	color: #fff;
+	background-color: #54A7B2;
+	border-radius: 10px;
+}
+.findBoss{
+	margin-left: 216px;
+}
+.findWorker {
+	background-color: #fff;
+	color: #5AC0CE;
+	margin-left: -3px;
+}
+
+.info {
+	padding-top: 88px;
+	height: 1054px;
+	background-color: #fff;
+	color: #999;
+	overflow: hidden;
+}
+
+.info>li{
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.title-list {
+	overflow: hidden;
+	font-size: 26px;
+	color: #999;
+	position: relative;
+}
+
+
+
+.title-list li {
+	float: left;
+	width: 230px;
+	margin-right: 10px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	background: url(downarrow.gif) right center no-repeat;
+}
+
+.title-list .liner {
+	position: absolute;
+	display:inline-block;
+	width: 1px;
+	height: 80px;
+	background: linear-gradient(to bottom,#fff,#ccc,#fff);
+}
+
+.info-list{
+
+}
+
+.info-list {
+	padding: 26px 30px;
+	font-size: 26px;
+}
+
+.server,
+.price {
+	float: left;
+}
+
+.serverdata h3{
+	padding-left: 34px;
+	font-weight: normal;
+	font-size: 24px;
+	background: url(data.png) left center no-repeat;
+}
+.serverdata span {
+	display: block;
+	padding-left: 34px;
+	line-height: 68px;
+	color: #333;
+}
+.server .address {
+	padding-left: 34px;
+	font-size: 24px;
+	background: url(address.png) left center no-repeat;
+}
+
+.info-list .price {
+	line-height: 110px;
+	float: right;
+	color: #E93A00;
+	padding-right: 40px;
+}
+
+
+
+.footer {
+	background-color: #F7F9FB;
+	height: 100px;
+	background: url(bottom-address.gif) left center no-repeat;
+}
+
+.footer .home {
+	float: left;
+	width: 46px;
+	height: 33px;
+	margin-top: 12px;
+	margin-left: 165px;
+	padding-top: 54px;
+	background: url(home.gif) no-repeat  ;
+	color: #5BC0CE;
+}
+
+.footer .edit {
+	float: left;
+	width: 94px;
+	height: 94px;
+	margin-left: 100px;
+	border-radius: 50%;
+	background: url(edit.gif) top center no-repeat #5FBFCD;
+}
+
+.footer .my {
+	float: left;
+	margin-top: 11px;
+	padding-top: 57px;
+	background: url(my.gif) top center no-repeat;
+	margin-left: 101px;
+
+}
+/*内容详情页结束*/

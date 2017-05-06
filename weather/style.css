@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	background-color: rgba(0,0,0,0.15);
+}
+
+ul {
+	list-style: none;
+}
+input {
+	font-size: 30px;
+}
+
+table {
+	border-collapse: collapse; 
+}
+
+.header {
+	margin-top: 50px;
+	text-align: center;
+}
+.inner-c {
+    margin: 50px auto;
+    width: 800px;
+}
+
+
+.note {
+	text-align: center;
+	font-size: 30px;
+	opacity: 0;
+	filter: alpha("opacity: 0");
+	margin-bottom: 10px;
+}
+.input-wrap
+{
+	width: 700px;
+	margin: 10px 50px;
+	height: 60px;
+}
+
+input {
+	font-size: 30px;
+	border: none;
+}
+
+.input-wrap .city-text,
+.input-wrap .search-btn{
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 5px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 30px;
+}
+
+.input-wrap .city-text {
+	width: 600px;
+	padding-left: 200px;
+	background-color: #369;
+	color: #fff
+}
+
+.input-wrap .search-btn {
+	background-color: orange;
+	width: 100px;
+}
+/* @today weather */
+.today-weather {
+	position: relative;
+	width: 700px;
+	height: 200px;
+	background-color: #333;
+	margin: 50px 50px;
+	box-sizing: border-box;
+	padding: 20px;
+	color: #fff;
+	display: none;
+}
+
+.today-weather .tw-cityName {
+	font-size: 50px;
+	color: #fff
+}
+
+.more-info {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+	right: 0;
+	top:  0px;
+	background-color: #685;
+}
+
+.more-info .info-list {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding:10px 0 0 10px
+}
+.info-list h3 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+.info-list ul {
+	margin-top: 10px;
+	line-height: 30px;
+}
+
+.info-list ul li {
+}
+
+/* today weather end */
+.weather-table {
+	width: 700px;
+	margin: 10px 50px;
+	display: none;
+}
+
+.weather-table caption {
+	margin-bottom: 10px;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.weather-table th {
+	line-height: 40px;
+}
+
+.weather-table tr {
+	text-align: center;
+}

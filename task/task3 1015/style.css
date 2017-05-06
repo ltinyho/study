@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Microsoft YaHei";
+}
+
+.wrap {
+	margin:0 auto;
+	width: 720px;
+
+}
+
+.header {
+	position: fixed;
+	width: 720px;
+	height: 88px;
+	margin: 0 auto;
+	line-height: 88px;
+	color: #fff;
+	font-size: 34px;
+	text-align: center;
+	background-color: #5FBFCD;
+}
+
+.close {
+	float: left;
+	margin-left: 30px;
+}
+
+.register {
+	float: right;
+	margin-right: 30px;
+}
+
+
+/* @loginBox*/
+.loginBox {
+	padding-top: 88px;
+	height: 1152px;
+	background-color: #EFF0F4;
+	font-size: 32px;
+}
+
+.loginBox .l-input {
+	margin-top: 16px;
+	background: #fff;
+	position: relative;
+}
+
+.l-input .liner {
+	position: absolute;
+	width: 2px;
+	height: 51px;
+	top: 24px;
+	left: 116px;
+	background-color: #EAEDEE;
+}
+
+.l-input .prompt {
+	position: absolute;
+	width: 400px;
+	line-height: 100px;
+	left: 152px;
+	color: #E3E7E8;
+
+}
+.l-input .account,
+.l-input .password {
+	font-size: 32px;
+	padding: 0 152px;
+	outline: none;
+	border: none;
+	height: 100px;
+	line-height: 52px;
+	background-color: #fff;
+	background: url(accout.png) 53px 35px no-repeat;
+}
+
+.l-input .password {
+	background: url(password.png) 42px 28px no-repeat;
+}
+
+.loginBox  .loginBtn {
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 100px;
+	border-top: 1px solid #CBE4EA;
+	background-color: #5FBFCD;
+	color: #fff;
+	font-size: 32px;
+}
+
+.loginBox a{
+	margin-top: 21px;
+	float: right;
+	text-decoration: none;
+	color: #5BC0CF; 
+	font-size: 28px;
+}

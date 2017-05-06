@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Microsoft YaHei";
+}
+
+.wrap {
+	margin:0 auto;
+	width: 720px;
+
+}
+
+.header {
+	position: fixed;
+	z-index: 999;
+	width: 720px;
+	height: 88px;
+	margin: 0 auto;
+	line-height: 88px;
+	color: #fff;
+	font-size: 34px;
+	text-align: center;
+	background: url(back.png) 43px center no-repeat #5FBFCD;
+}
+
+.person-home {
+	padding-top: 88px;
+	height: 1152px;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+
+.info {
+	margin: 79PX 0 58px 0 ;
+	font-size: 0;  /*解决display:inline-block还有空隙*/
+}
+
+.info .photo {
+	display: inline-block;
+	width: 170px;
+	height: 170px;
+	margin-left: 18px;
+	border-radius: 50%;
+	background-color: #EFEFEF;
+}
+
+.info .position {
+	display: inline-block;
+	width: 18px;
+	height: 170px;
+	margin-left: 44px;
+	background: url(position.png) left center no-repeat;
+}
+
+.skill {
+
+}
+
+.title {
+	height: 119px;
+	line-height: 119px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+
+}
+
+.title i{
+	display: block;
+	width: 3px;
+	height: 27px;
+	position: absolute;
+	left: 18px;
+	top: 50%;
+	margin-top: -13px;
+	background-color: #5FBFCD;
+}
+
+.title h3 {
+	margin-left: 47px;
+	font-size: 32px;
+}
+
+.request {
+	line-height: 100px;
+	font-size: 30px;
+	margin-left: 48px;
+}
+
+.request i {
+	position: relative;
+	display: inline-block;
+	width: 1px;
+	height: 27px;
+	background-color: #E1E5E7;
+}
+
+.request span {
+	display: inline-block;
+	padding: 0 32px;
+	background: url(star.png)  left center no-repeat;
+}
+
+.more-info {
+	padding: 0 70px 0 40px;
+	font-size: 32px;
+	list-style: none;
+}
+
+.more-info li {
+	line-height: 100px;
+}
+.more-info i {
+	display: inline-block;
+	width: 1px;
+	height: 26px;
+	background-color: #E1E5E7;
+	margin: 0 24px;
+}
+
+.more-info span {
+	color: #333333;
+}
+
+.more-info .introduce {
+	float: left;
+	color: #999999;
+}
+.more-info .ability {
+	display: inline-block;
+	padding-top: 20px;
+	width: 422px;
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.contact {
+	margin-top: 100px;
+}
+.contact .iphone {
+	margin-left: 25px;
+	float: left;
+	width: 310px;
+	height: 88px;
+	line-height: 88px;
+	border-radius: 5px;
+	background-color: #5FBFCD;
+	text-align: center;
+	font-size: 32px;
+	color: #fff;
+}
+
+/*@内容详情页*/
+	
+/*内容详情页结束*/

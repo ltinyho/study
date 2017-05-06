@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			margin-top: 30px;
+			height: auto;
+			background-color: red;
+			margin-bottom: 30px;
+			width: 400px;
+			border: 1px solid olive;
+		}
+
+		.box li {
+			border: 1px solid black;
+			margin-top: 20px;
+			height: 20px;
+			background-color: green;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		some text
+		<p>Some more text</p>
+	</div>
+</body>
+</html>
+<script type="text/javascript"> 
+/*定义一个人类*/ 
+	function Person(name,age) { 
+		this.name=name; this.age=age; 
+		this.hah = 2;
+	} 
+/*定义一个学生类*/ 
+	function Student(name,age,grade) { 
+		Person.apply(this,arguments);
+		 this.grade=grade; 
+	} 
+//创建一个学生类 
+	var student=new Student("qian",21,"一年级"); 
+//测试 
+	console.log("name:"+student.name+"\n"+"age:"+student.age+"\n"+"grade:"+student.grade); 
+//大家可以看到测试结果name:qian age:21 grade:一年级 
+//学生类里面我没有给name和age属性赋值啊,为什么又存在这两个属性的值呢,这个就是apply的神奇之处. 
+</script>

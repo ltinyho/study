@@ -1,0 +1,44 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Microsoft YaHei", Helvetica, Arial, FreeSans, Arimo;
+}
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* --------------------------------------------- */
+.show {
+  display: block!important;
+}
+.hidden {
+  display: none!important;
+}
+.fl {
+  float: left!important;
+}
+.fr {
+  float: right!important;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}

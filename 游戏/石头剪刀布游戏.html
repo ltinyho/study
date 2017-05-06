@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>石头剪刀布</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: #367;
+		}
+
+		ul{
+			list-style: none;
+		}
+		.container{
+			text-align: center;
+			width: 1000px;
+			margin: 100px auto;
+			overflow: hidden;
+		}
+		.container p {
+			margin-top: 20px;
+			font-size: 12px;
+		}
+		.box,.process {
+			float: left;
+			height: 400px;
+			box-shadow:  0 0 2px 1px red;
+			margin-right:20px;
+		}
+		.human{
+			background-color: #fff;
+		}	
+		#select {
+			overflow: hidden;
+		}
+		.human li {
+			float: left;
+			width: 117px;
+			height: 143px;
+			background: url(images.jpg) no-repeat;
+			cursor: pointer;
+		}
+
+		.process{
+			margin-top: 200px;
+			width: 100px;
+			box-shadow: none;
+		}
+		#compute{
+			width: 400px;
+			background:#fff;
+		}
+
+		.show {
+			margin: 0 auto;
+			text-align: center;
+			background: url(images.jpg) 0 30px no-repeat;
+			width: 117px;
+			height: 173px;
+		}
+		#start{
+			width: 100px;
+			height: 50px;
+			background-color: orange;
+			border: 2px solid #cda;
+			cursor: pointer;
+			margin-bottom: 20px;
+			font-size: 26px;
+			font-weight: 700;
+			color: #fff;
+		}
+
+		#info {
+			font-size: 20px;
+		}
+		#compute #compute-show {
+			margin-top: 125px;
+			width: 117px;
+			margin-left: 117px;
+			height: 173px;
+			background: url(images.jpg) no-repeat;
+		}
+
+		#result {
+			margin-top: 10px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<section class="container">
+		<div class="human box">
+			<ul id="select">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<div class="show" id="humanShow">
+				<h1>你准备出</h1>
+			</div>
+			<p>注：每次点击"开始"前，必须重新选择你要出的拳</p>
+		</div>
+		<div class="process">
+			<button id="start">开始</button>
+			<h2 id="info">你获胜0次</h1>
+				<p id="result"></p>
+		</div>
+		<ul id="compute" class="box">
+				<li id="compute-show"></li>
+		</ul>
+	</section>
+</body>
+</html>
+<script>
+	var selLis = document.getElementById("select").children;
+	var humanShow = document.getElementById("humanShow");
+	var computeShow = document.getElementById("compute-show");
+	var start = document.getElementById("start");
+	var info = document.getElementById("info");
+	var result = document.getElementById("result");
+	var timer = null;
+	var winTimes = 0; // 获胜次数
+	for(var i = 0; i < selLis.length; i++){
+		selLis[i].index = i;
+		selLis[i].style.backgroundPosition = -117*i+"px "+"0";
+		selLis[i].addEventListener("click",function(){
+			var that = this;
+			humanShow.style.backgroundPosition = -117*this.index + "px "+"30px";
+			start.addEventListener("click",function(){
+				result.style.color = "black";
+				result.innerText = "等待结果";
+				clearInterval(timer);
+				var accout = 0;
+				timer = setInterval(function(){
+					accout++;
+					var num = Math.floor(Math.random()*3);
+					computeShow.style.backgroundPosition = -117*num+"px "+"0";
+					if(accout == 15) {
+						if(that.index==num){
+							result.style.color = "orange";
+							result.innerText = "平局";
+						}else if(that.index ==0 && num ==1 ||that.index ==1 && num == 2 ||that.index == 2 && num ==0){
+							result.style.color = "red";
+							result.innerText = "你输了";
+						}
+						else{
+							winTimes++;
+							result.innerText = "你获胜了";
+							result.style.color = "yellow";
+							info.innerText = "你获胜"+winTimes+"次";
+						}
+						clearInterval(timer);
+					}
+				},200);
+			});
+		});
+	}
+	
+</script>

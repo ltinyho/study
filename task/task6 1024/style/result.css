@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.wrap-container {
+  height: auto;
+  background-color: #29BDDF;
+}
+.inner-c {
+  width: 600px;
+  margin: 0 20px;
+}
+header {
+  border: none;
+  position: relative;
+  text-align: center;
+  line-height: 89px;
+  font-size: 34px;
+  color: #fff;
+}
+header .home,
+header .prompt {
+  position: absolute;
+  bottom: 0;
+}
+header .home {
+  left: 0;
+}
+header .prompt {
+  right: 0;
+}
+.win-text {
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+}
+.win-text .win-img {
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+}
+.win-text .win-rate {
+  margin: 0 80px;
+  font-size: 30px;
+  line-height: 40px;
+  color: #FFC865;
+}
+.summary {
+  margin: 50px 0 0 80px;
+  color: #fff;
+  font-size: 30px;
+}
+.summary .man-num {
+  margin-top: 16px;
+}
+.summary .man-num li {
+  float: left;
+  line-height: 38px;
+  margin-right: 30px;
+}
+.summary .result {
+  margin: 6px 0 22px 0;
+  line-height: 35px;
+}
+.process {
+  padding: 0 88px 0 80px;
+  height: 255px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.process li {
+  padding-top: 42px;
+}
+.process li .day {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.process li .time {
+  font-size: 20px;
+  color: #B6B6B6;
+}
+.process li p {
+  font-size: 25px;
+  color: #B6B6B6;
+  line-height: 38px;
+}
+footer {
+  height: 130px;
+  background-color: #99DFF0;
+}
+footer a {
+  float: left;
+  display: block;
+  width: 271px;
+  height: 86px;
+  margin: 24px 0 0 20px;
+  line-height: 86px;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+footer .again {
+  background-color: #F56E6E;
+}
+footer .up-share {
+  background-color: #FBB335;
+}

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+.show {
+  display: block!important;
+}
+.hidden {
+  display: none!important;
+}
+.fl {
+  float: left!important;
+}
+.fr {
+  float: right!important;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: "";
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}

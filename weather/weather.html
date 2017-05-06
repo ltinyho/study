@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气查询</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="test">1456123156</div>
+	<div class="header"><h1>天气查询</h1></div>
+	<div class="inner-c">
+		<p class="note">正在查询</p>
+		<div class="input-wrap">
+			<input class="city-text" id="cityName"name="city"type="text" value ="请输入您要查询的城市名称" />
+			<input class="search-btn" id="searchBtn"type="button" name="search" value = "查询" / >
+		</div>
+		<div class="today-weather">
+				<div class="tw-cityName"></div>
+				<div class="rain_sun">
+					<span></span>
+				</div>
+				<div class="more-info">
+					<ul>
+						<li id="nowTime" class="info-list">
+						  <h3>今天</h3>
+						  <ul>
+						  	<li></li>
+						  	<li></li>
+						  	<li>更新时间</li>
+						  	<li></li>
+						  </ul>
+						</li>
+						<li id="weather" class="info-list">
+						  <h3>天气</h3>
+						  <ul>
+						  	<li>温度：</li>
+						  	<li>湿度：</li>
+						  	<li></li>
+						  </ul>
+						</li>
+						<li id="wind" class="info-list">
+						  <h3>风</h3>
+						  <ul>
+						  	<li>风向:</li>
+						  	<li>风力:</li>
+						  </ul>
+						</li>
+					</ul>
+				</div>
+		</div>
+		<table class="weather-table" id="weekWeather">
+			<tbody>
+				<tr>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr id="tbDate">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr id="tbRain">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr id="tbTemp">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="../../js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="weather.js"></script>

@@ -1,0 +1,76 @@
+*{margin: 0;padding: 0;}
+.wrap {
+	margin: 100px auto;
+	width: 1000px;
+}
+
+.inner-c {
+	position: relative;
+	width: 640px;
+	background-color: #68CDD5;
+	border-top: 1px solid #56A4AA;
+	height: 1009px;
+	margin: 0 auto;
+}
+
+.back {
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	left: 35px;
+	top: 20px;
+	border-radius: 50%;
+	border: 1px solid #3A7073;
+	background: url(back.gif) no-repeat 16px 18px;
+}
+
+.header img {
+	margin-left: 198px;
+	margin-top: 116px;
+}
+
+.content {
+	margin-top: 112px;
+	margin-bottom: 54px;
+}
+.content p {
+	padding: 0 100px 0 90px;
+	line-height: 54px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.circle{
+	position: relative;
+	height: 111px;
+}
+
+.circle:before,
+.circle:after{
+	width: 84px;
+	height: 84px;
+	content: "";
+	position: absolute;
+	left: 139px;
+	top: 0;
+	border-radius: 50%;
+	background-color: #009D95;
+}
+.circle:after{
+	top: 5px;
+	left: 432px;
+}
+
+.info {
+	color: #fff;
+	font-family: "Sim Sun";
+	font-size: 24px;
+	
+}
+.num {
+	margin-left: 125px;
+}
+
+.word {
+	margin-left: 185px;
+}

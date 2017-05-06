@@ -1,0 +1,203 @@
+@charset = "UTF-8";
+.header{
+	background-color: #055C92;
+	line-height: 39px;
+}
+.header-left,
+.header-right{
+	color: #FFFFFF;
+}
+
+.header-left {
+	float: left;
+}
+
+.header-right {
+	float: right;
+}
+
+
+.nav {
+	width: 100%;
+	height: 83px;
+	padding-top: 30px;
+	border-top: 1px solid #B2C3CE;
+}
+
+.logo {
+	float: left;
+	width: 166px;
+	height: 53px;
+	margin-right: 65px;
+	text-indent: -999em;
+	background: url(../images/logo.png) no-repeat;
+}
+
+.items{
+	float: left;
+	height: 64px;
+}
+
+
+.items ul li {
+	float: left;
+	margin-right: 26px;
+	line-height: 52px;
+}
+
+.items li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+.banner {
+	padding-bottom: 39px;
+}
+
+.banner-img {
+	float: left;
+	margin-right: 9px;
+}
+.banner-img img{
+	border: 1px solid #71B2C4;
+	border-left: none;
+	border-bottom: none;
+}
+
+.info {
+	float: right;
+	width: 232px;
+	height: 399px;
+	position: relative;
+}
+
+.info-port {
+	position: absolute;
+	width: 100%;
+	line-height: 45px;
+	background-color: #055C92;
+	color: #FFFFFF;
+	text-align: center;
+	border-bottom: 1px solid #E0E0E0; 
+}
+
+ul.info-news{
+	height: 339px;
+	padding-top: 60px;
+	line-height: 36px;
+	border-right: 1px solid #E0E0E0;
+	padding-left: 20px;
+	font-size: 13px;
+	background-color: #F9F9F9;
+}
+
+ul.info-news i{
+	float: left;
+	height: 0px;
+	width: 0px;
+	border: 2px solid #055C92;
+	position: relative;
+	top: 15px;
+	left: -10px;
+}
+
+.wrapper{
+	width: 100%;
+	height: 455px;
+	padding-top: 51px;
+	background-color: #F3F3F3;
+}
+.web {
+	float: left;
+	width: 232px;
+	height: 350px;
+	margin-right: 9px;
+}
+
+ul.course {
+	width: 959px; 
+	float: left;
+}
+.course li{
+	float: left;
+	width: 232px;
+	height: 146px;
+	background-color: #fff;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding-top: 24px;
+	text-align: center;
+}
+.course  li.row-last{
+	margin-right: 0; 
+}
+
+.course  img{
+	height: 80px;
+	width: 64px;
+	line-height: 130px;
+}
+.course h3{
+	padding: 17px;
+}
+
+.footer{
+	height: 485px;
+}
+
+.about{
+	height: 146px;
+	padding-top: 55px;
+
+}
+.about dl{
+	float: left;
+	margin-right: 115px;
+}
+.about dt{
+	margin-bottom: 12px;
+}
+.about dd{
+	font-size: 12px;
+	color: #8D8D8D;
+	line-height: 24px;
+}
+
+
+
+.friendlink {
+	height: 114px;
+	padding-top: 24px;
+	border: 1px solid #E6E6E6;
+	border-left: none;
+	border-right: none;
+}
+
+.friendlink h3 {
+	font-size: 12px;	
+	margin-bottom: 12px;
+}
+
+.friendlink p{
+	font-size: 11px;
+	color: #8D8D8D;
+	line-height: 26px;
+}
+
+.copyright {
+	height: 114px;
+	padding-top: 30px;
+}
+
+.footer-logo {
+	float: left;
+	margin-right: 20px;
+}
+.copyright p {
+	float: left;
+	line-height: 24px;
+	font-size: 12px;
+}

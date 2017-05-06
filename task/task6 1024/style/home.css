@@ -1,0 +1,84 @@
+@charset "UTF-8";
+.menu {
+  margin-top: 40px;
+  margin-left: 22px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.menu li {
+  background-color: #fff;
+  width: 34px;
+  height: 4px;
+  border: 1px solid #5FCEE7;
+  margin-bottom: 5px;
+}
+.main {
+  background: #F0F0F0;
+  padding: 25px 35px;
+  background-color: #F0F0F0;
+}
+.last-game,
+.game {
+  width: 568px;
+  margin-top: 26px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font-size: 32px;
+  text-align: center;
+}
+.last-game {
+  position: relative;
+  height: 116px;
+  line-height: 160px;
+  color: #9A9A9A;
+}
+.last-game i {
+  position: absolute;
+  top: 38px;
+  right: 14px;
+  width: 24px;
+  height: 40px;
+  background: url(../images/next-game.gif) no-repeat;
+}
+.game {
+  padding-top: 66px;
+}
+.game h3 {
+  font-size: 34px;
+  color: #FBB435;
+  font-weight: normal;
+  margin-bottom: 23px;
+}
+.game .game-version {
+  margin-bottom: 52px;
+}
+.game .game-version a {
+  display: block;
+  height: 134px;
+  line-height: 180px;
+  background-color: #29BDDF;
+}
+.game .game-version p {
+  margin-top: 10px;
+  font-size: 21px;
+  color: #787878;
+}
+.game .circle {
+  position: relative;
+  left: 42%;
+  top: -40px;
+  overflow: hidden;
+}
+.game .circle li {
+  float: left;
+  width: 17px;
+  height: 17px;
+  border-radius: 17px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  margin: 0 5px;
+  background: #EFEFEF;
+}
+.game .circle li.current {
+  background-color: #69D1E9;
+}
